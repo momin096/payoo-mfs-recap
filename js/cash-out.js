@@ -12,6 +12,12 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
         console.log('Hey')
 
         setInnerTextById('account-balance', newBalance);
+
+        const p = document.createElement('p');
+        p.innerText = `Cash out: ${cashOut} Tk. Balance: ${newBalance}`;
+
+        const statementContainer = document.getElementById('statement-container');
+        statementContainer.appendChild(p);
     }
     else{
         alert('Something Went Wrong');
