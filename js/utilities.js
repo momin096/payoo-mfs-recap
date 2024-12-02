@@ -19,3 +19,14 @@ function setInnerTextById(elementId, value){
     element.innerText = value ;
     return element;
 }
+
+
+function showSectionById(elementId){
+    document.getElementById('add-money-form').classList.add('hidden');
+    document.getElementById('cash-out-form').classList.add('hidden');
+    document.getElementById('statement').classList.add('hidden');
+
+    // show the section
+
+    document.getElementById(elementId).classList.remove('hidden');
+}

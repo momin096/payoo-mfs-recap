@@ -29,15 +29,15 @@
                     <div class="divider"></div>
                     <!-- Feature start -->
                     <div class="join">
-                      <input class="join-item btn" type="radio" name="options" aria-label="Add Money" checked/>
-                      <input  class="join-item btn" type="radio" name="options" aria-label="Cash Out" />
-                      <input class="join-item btn" type="radio" name="options" aria-label="Statement" />
+                      <input id="show-add-money" class="join-item btn" type="radio" name="options" aria-label="Add Money" checked/>
+                      <input id="show-cash-out"  class="join-item btn" type="radio" name="options" aria-label="Cash Out" />
+                      <input id="show-statement" class="join-item btn" type="radio" name="options" aria-label="Statement" />
                     </div>
                     <!-- Feature End -->
                     <div class="divider"></div>
 
                     <!-- Add Money Form Start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                    <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -58,7 +58,7 @@
                       </div>
                     <!-- Add Money Form End -->
                     <!-- Cash Out Form Start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -79,6 +79,12 @@
                       </div>
                     <!-- Cash Out Form End -->
 
+                    <!-- Statement start -->
+                     <div id="statement" class="hidden">
+                      <h1 class="text-5xl">Statement here</h1>
+                     </div>
+                    <!-- Statement End -->
+
                 </div>
             </div>
         </div>
@@ -87,6 +93,7 @@
     <script src="./js/utilities.js"></script>
     <script src="./js/add-Money.js"></script>
     <script src="./js/cash-out.js"></script>
+    <script src="./js/feature.js"></script>
 </body>
 
 </html>
