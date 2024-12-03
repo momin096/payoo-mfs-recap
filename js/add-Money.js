@@ -13,9 +13,12 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
 
         const p = document.createElement('p');
         p.innerText = `Added: ${addMoney} Tk. Balance: ${newBalance}`;
+
+        const hr = document.createElement('hr');
         
         const statementContainer = document.getElementById('statement-container');
         statementContainer.appendChild(p);
+        statementContainer.appendChild(hr);
     }
     else{
         alert('Something went wrong')
